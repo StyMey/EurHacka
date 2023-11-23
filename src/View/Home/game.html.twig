@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Heracles Labours #5</title>
+		<link rel="stylesheet" href="../../../public/assets/css/Game.css">
+	</head>
+
+	<body>
+		<header>
+			<h1>Heracles vs Ceryneian Hind</h1>
+			<a class="btn reset" href="?reset=reset">Reset</a>
+		</header>
+		<main>
+			<div class="error"><?= $error ?? ''; ?></div>
+			<div class="fighters">
+				<a href="#hero">
+					<div class="fighter">
+						<figure class="heracles">
+							<img src="<?= $arena->getHero()->getImage() ?>" alt="heracles">
+							<figcaption><?= $arena->getHero()->getName() ?></figcaption>
+						</figure>
+						<progress class="life" max="100" value="<?= $arena->getHero()->getLife() ?>"></progress>
+				</div>
+			</a>
+			<?php foreach ($arena->getMonsters() as $monster) : ?>
+			<div class="fighter">
+				<figure class="monster">
+					<img src="<?= $monster->getImage() ?>" alt="monster">
+					<figcaption><?= $monster->getName() . '(' . $monster->getLife() . ')' ?></figcaption>
+				</figure>
+				<progress class="life" max="100" value="<?= $monster->getLife() ?>"></progress>
+		</div>
+		<?php endforeach; ?></body>
+
+</html></div><?php include 'map.php' ?></main><?php include 'inventory.php' ?><script src="../../../public/assets/js/move.js"></script></body></html>
