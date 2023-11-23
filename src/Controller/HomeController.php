@@ -2,13 +2,11 @@
 
 namespace App\Controller;
 
-use App\Model\HomeManager;
+use App\Controller\AbstractController;
 
 class HomeController extends AbstractController
 {
-    /**
-     * Display home page
-     */
+    /* Display home page */
     public function index(): string
     {
         return $this->twig->render('Home/accueil/index.html.twig');
