@@ -20,3 +20,5 @@ CREATE TABLE `user` (
 --
 INSERT INTO `user` (`pseudo`, `mdp`) VALUES
 ('noel', 'noel');
+
+ALTER TABLE `user` DROP `mdp`;
