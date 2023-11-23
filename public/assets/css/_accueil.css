@@ -1,38 +1,37 @@
+
+.uk-heading-small {
+    text-align: center;
+    font-family: var(--main-font);
+    padding-top: 1rem;
+
+.uk-container {
+    text-align: center;
+}
+
+.uk-text-large {
+    font-family: 'Ephesis', cursive;
+    font-size: 2rem;
+    box-shadow: 10px 10px 15px #696567;
+    padding: 1.5rem;
+    margin: 0 3rem 0 5rem;
+}
+
 .swiper {
     width: 100%;
-    height: 500px;
+    height: 200px;
     background-color: var(--main-color);
+    opacity: .7;
+    margin-top: 2rem;
 }
 
-.swiper-slide {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-slide img {
+.swiper-slide>img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: contain;
-    object-position: 50% 50%;
-    paddin
-}
 
 .lw-div-accueil {
     text-align: center;
-}
-
-.uk-heading-small {
-    font-family: var(--main-font);
-    padding-bottom: calc(var(--padding)*4);
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    color:white;
-    background-color:var(--main-color): 
 }
 
 .button-accueil-resa {
@@ -45,8 +44,8 @@
 }
 
 .body {
-    size: 2rem;
-    background-color: var(--background);
+    background-image: url(/assets/images/accueil/background-flocon.jpg);
+    background-size: 100%;
 }
 
 
