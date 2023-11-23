@@ -3,6 +3,7 @@
     text-align: center;
     font-family: var(--main-font);
     padding-top: 1rem;
+}
 
 .uk-container {
     text-align: center;
@@ -10,7 +11,8 @@
 
 .uk-text-large {
     font-family: 'Ephesis', cursive;
-    font-size: 2rem;
+    font-size: 3rem;
+    color: #333333;
     box-shadow: 10px 10px 15px #696567;
     padding: 1.5rem;
     margin: 0 3rem 0 5rem;
@@ -29,6 +31,7 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
 
 .lw-div-accueil {
     text-align: center;
