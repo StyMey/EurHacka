@@ -1,6 +1,89 @@
 {% extends 'layout.html.twig' %}
 
+{%  block title %}Page d'accueil Christmas Battle
+{% endblock %}
+
+{% block stylesheet %}
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+{% endblock %}
+
 {% block content %}
-    <h1>Hello Wilder !</h1>
-    <p>Find a complete CRUD example on <a href="/items">/items</a> page.</p>
+	<div class="body">
+		<div classe="uk-container uk-container-expand lw-div-accueil">
+			<h1 class="uk-heading-small">Le combat de Noël !</h1>
+		</div>
+
+		<div class="uk-container">
+			<p class="uk-text-large lw-text-large">Vous détestez l'esprit de Noël? Vous avez passé une mauvaise année? Vos enfants vous rendent dingues? Vous n'en pouvez plus de vos voisins ou de vos beaux-parents? Votre mari ou votre femme est insupportable? Ou tout simplement vous en avez marre de cette ambiance édulcorée de Noël?
+				<br><br>
+				Alors vous êtes au bon endroit!
+				<br><br>
+				Venez vous défoulez lors d'un combat pour tuer l'esprit de Noël!</p>
+		</div>
+		<!-- Swiper -->
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="/assets/images/santa_claus1.jpg" alt="Père Noël en colère"/></div>
+				<div class="swiper-slide"><img src="/assets/images/santa_claus_vs_hans_trapp.png" alt="le fight"/></div>
+				<div class="swiper-slide"><img src="/assets/images/hans_trapp.png" alt="Hans Trapp le terrible"/></div>
+
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+
+
+		<div class="uk-container button-connexion">
+			<a href='/transition'>
+				<button class="uk-button-large">Connexion</button>
+			</a>
+		</div>
+	</div>
+{% endblock %}
+
+
+{% block javascript %}
+	{{parent()}}
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper('.swiper', {
+slidesPerView: 1,
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev'
+},
+autoplay: {
+delay: 2500,
+disableOnInteraction: false
+},
+loop: true,
+breakpoints: {
+430: {
+slidesPerView: 1,
+spaceBetween: 20
+},
+640: {
+slidesPerView: 2,
+spaceBetween: 80
+},
+768: {
+slidesPerView: 3,
+spaceBetween: 20
+},
+1024: {
+slidesPerView: 3,
+spaceBetween: 70
+},
+1440: {
+slidesPerView: 5,
+spaceBetween: 125
+},
+2560: {
+slidesPerView: 5,
+spaceBetween: 125
+}
+}
+});
+	</script>
 {% endblock %}
