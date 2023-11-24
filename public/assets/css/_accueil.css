@@ -1,8 +1,13 @@
 
 .uk-heading-small {
     text-align: center;
-    font-family: var(--main-font);
     padding-top: 1rem;
+}
+
+.title-page-h1 {
+    font-family: var(--main-font);
+    font-size: 4rem;
+    margin-bottom: 0;
 }
 
 .uk-container {
@@ -51,4 +56,23 @@
     background-size: 100%;
 }
 
+.uk-margin {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
+.uk-input {
+    border: 1px solid #222;
+}
+
+.button-image {
+    height: 6rem;
+    width: 15rem;
+    opacity: .8;
+}
+
+.uk-button {
+    border: 1px solid #000000;
+}

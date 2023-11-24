@@ -7,12 +7,12 @@ body, html {
    
   }
   
-  .transition-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: #771b1b; /* Couleur de secours si l'image de fond ne se charge pas */
-  }
+.transition-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #771b1b; /* Couleur de secours si l'image de fond ne se charge pas */
+}
   
 .background-image {
     width: 100%;
@@ -21,43 +21,40 @@ body, html {
     background-size: cover;
     background-position: center;
     z-index: 1;
-  }
+}
   
-  .transition-page {
-    position: relative;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 1s ease, transform 1s ease;
-    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent pour améliorer la lisibilité */
-    padding: 20px;
-  }
+.transition-page {
+  position: relative;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1s ease, transform 1s ease;
+  background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent pour améliorer la lisibilité */
+  padding: 20px;
+}
   
-  .image {
-    margin-top: 15rem;
-    margin-left: 17.5rem;
-    display: block, flex;
-    align-items: center;
-    width: 15%;
-    height: 25%;
-    z-index: 1000;
-  }
+.image {
+  margin-top: 9rem;
+  margin-left: 12.5rem;
+  display: block, flex;
+  align-items: center;
+  width: 17%;
+  height: 28%;
+  z-index: 1000;
+}
 
-  .bouton-image {
-    width: 30rem;
-    height: 20rem; 
-    background-image: url('/assets/images/start1.png'); 
-    background-size: cover; 
-    background-repeat: no-repeat;
-    color: black; 
-    display: block, flex;
-    align-items: center;
-    margin-top: 5rem;
-    margin-left: 37.5%;
-  }
+.bouton-image {
+  width: 45rem;
+  height: 17rem; 
+  background-image: url('/assets/images/start1.png');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  margin-top: 5rem;
+  margin-left: 25%;
+  opacity: .7;
+}
 
-  .transition-page.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
+.transition-page.show {
+  opacity: 1;
+  transform: translateY(0);
+}
