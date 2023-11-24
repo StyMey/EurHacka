@@ -16,4 +16,5 @@ return [
     'items/delete' => ['ItemController', 'delete',],
     'game' => ['GameController', 'index',],
     'transition' => ['transitionController', 'index',],
+    'wishlist' => ['WishlistController', 'index',],
 ];

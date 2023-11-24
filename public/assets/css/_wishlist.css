@@ -1,0 +1,33 @@
+body {
+    background-image: url(/assets/images/fond-banc-de-neige.jpg);
+    background-size: cover;
+}
+
+.titre-wishlist {
+    font-family: var(--main-font);
+    color: #fff;
+    font-size: 5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.text-wishlist {
+    font-family: 'Ephesis', cursive;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: hoff voff blur #000;
+    color: #fff;
+    box-shadow: 10px 10px 15px #696567;
+    padding: 1.5rem;
+    margin: 0 3rem 0 5rem;
+}
+
+.images {
+    display: flex;
+    align-content: space-between;
+}
+
+.img1 .img2 .img3 .img4 .img5 .img6 .img7 {
+    height: 5rem;
+    width: 7rem;
+}
