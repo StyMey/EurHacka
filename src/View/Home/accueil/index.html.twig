@@ -1,0 +1,91 @@
+{% extends 'layout.html.twig' %}
+
+{%  block title %}Page d'accueil Christmas Battle
+{% endblock %}
+
+{% block stylesheet %}
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+{% endblock %}
+
+{% block content %}
+	<div class="body">
+		<div class="uk-container uk-container-expand lw-div-accueil">
+            <div class="uk-heading-small">
+                <h1 class="title-page-h1">Christmas Clash !</h1>
+            </div>
+        </div>
+
+		<div class="uk-container">
+			<p class="uk-text-large lw-text-large">Vous détestez l'esprit de Noël? Vous avez passé une mauvaise année? 
+			Vos enfants vous rendent dingues? Vous n'en pouvez plus de vos voisins ou de vos beaux-parents? Votre mari 
+			ou votre femme est insupportable? Ou tout simplement vous en avez marre de cette ambiance édulcorée de Noël?
+			<br>
+			Alors vous êtes au bon endroit!
+			<br>
+			Venez vous défoulez lors d'un combat pour tuer l'esprit de Noël!</p>
+		</div>
+		<!-- Swiper -->
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="/assets/images/accueil/santa1.png" alt="Père Noël"/></div>
+				<div class="swiper-slide"><img src="/assets/images/accueil/ske.png" alt="Squelette de noël"/></div>
+				<div class="swiper-slide"><img src="/assets/images/accueil/renne.png" alt="Renne pas très commode"/></div>
+				<div class="swiper-slide"><img src="/assets/images/accueil/miff.png" alt="Famille squlette"/></div>
+				<div class="swiper-slide"><img src="/assets/images/accueil/mere-noel.png" alt="Mère Noël vampire"/></div>
+				<div class="swiper-slide"><img src="/assets/images/accueil/lutin.png" alt="Lutin maléfique"/></div>
+				<div class="swiper-slide"><img src="/assets/images/accueil/grinch.png" alt="Le grinch"/></div>
+
+			</div>
+			<div class="swiper-button"></div>
+			<div class="swiper-button"></div>
+		</div>
+		{% include 'Home/accueil/_pseudo.html.twig' %}
+	</div>
+{% endblock %}
+
+
+{% block javascript %}
+	{{parent()}}
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper('.swiper', {
+slidesPerView: 1,
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev'
+},
+autoplay: {
+delay: 2500,
+disableOnInteraction: false
+},
+loop: true,
+breakpoints: {
+430: {
+slidesPerView: 1,
+spaceBetween: 20
+},
+640: {
+slidesPerView: 2,
+spaceBetween: 80
+},
+768: {
+slidesPerView: 3,
+spaceBetween: 20
+},
+1024: {
+slidesPerView: 3,
+spaceBetween: 70
+},
+1440: {
+slidesPerView: 5,
+spaceBetween: 125
+},
+2560: {
+slidesPerView: 5,
+spaceBetween: 125
+}
+}
+});
+	</script>
+{% endblock %}
